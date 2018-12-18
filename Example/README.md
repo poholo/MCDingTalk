@@ -1,6 +1,3 @@
-# MCDingTalk
-钉钉(DingTalk)分享、授权SDK
-
 # 用法
 1. Info.plist配置查询钉钉授权登录scheme权限。LSApplicationQueriesSchemes中添加dingtalk, dingtalk-open, dingtalk-sso。dingtalk用于查询是否安装钉钉。dingtalk-open用于查询是否支持开放平台接口调用（不需要查询开放平台接口可不填）。dingtalk-sso用于查询是否支持授权登录。注：iOS系统限制LSApplicationQueriesSchemes最多只能有50个，超出的话会有一部分不生效。
 如图:
@@ -56,18 +53,3 @@ authReq.bundleId = #该应用的bundleId#;
     }
 }
 ```
-
-## updates
-```xml
-
-1.0.1 更新依赖方式（pod版），支持最新的sdk
-
-```
-
-## Author
-littleplayer mailjiancheng@163.com
-
-## License
-
-MCDingTalk is available under the MIT license. See the LICENSE file for more info.
-

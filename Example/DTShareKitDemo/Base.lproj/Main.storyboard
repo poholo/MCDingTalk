@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-Fh-GZw">
+                                <rect key="frame" x="16" y="46" width="343" height="30"/>
+                                <state key="normal" title="Open DingTalk"/>
+                                <connections>
+                                    <action selector="openDingTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y85-Rk-qcK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuN-Du-bFa">
+                                <rect key="frame" x="16" y="84" width="343" height="30"/>
+                                <state key="normal" title="Share Text To DingTalk"/>
+                                <connections>
+                                    <action selector="shareTextToDingTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cnq-j9-bah"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayg-bG-F5j">
+                                <rect key="frame" x="16" y="122" width="343" height="30"/>
+                                <state key="normal" title="Share Image To DingTalk"/>
+                                <connections>
+                                    <action selector="shareImageToDingTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssr-xh-7Ng"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9j-V7-MKD">
+                                <rect key="frame" x="16" y="160" width="343" height="30"/>
+                                <state key="normal" title="Share Web To DingTalk"/>
+                                <connections>
+                                    <action selector="shareWebToDingTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdV-CU-mSK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTj-ve-OLf">
+                                <rect key="frame" x="16" y="198" width="343" height="30"/>
+                                <state key="normal" title="SSO with DingTalk"/>
+                                <connections>
+                                    <action selector="ssoWithDingTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T48-Ti-nqB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ayg-bG-F5j" secondAttribute="leading" id="9Dz-3d-Y62"/>
+                            <constraint firstItem="YuN-Du-bFa" firstAttribute="top" secondItem="fXQ-Fh-GZw" secondAttribute="bottom" constant="8" id="9UP-10-mvM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fXQ-Fh-GZw" secondAttribute="leading" id="Lm1-Zx-cWm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YuN-Du-bFa" secondAttribute="leading" id="TTC-p9-euL"/>
+                            <constraint firstItem="RTj-ve-OLf" firstAttribute="width" secondItem="fXQ-Fh-GZw" secondAttribute="width" id="Y90-ka-39B"/>
+                            <constraint firstItem="Ayg-bG-F5j" firstAttribute="top" secondItem="YuN-Du-bFa" secondAttribute="bottom" constant="8" id="Z1p-y4-GBF"/>
+                            <constraint firstItem="fXQ-Fh-GZw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="fcb-fJ-WAo"/>
+                            <constraint firstItem="S9j-V7-MKD" firstAttribute="top" secondItem="Ayg-bG-F5j" secondAttribute="bottom" constant="8" id="l8d-qD-nPu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="RTj-ve-OLf" secondAttribute="leading" id="lmy-db-oSO"/>
+                            <constraint firstItem="S9j-V7-MKD" firstAttribute="width" secondItem="fXQ-Fh-GZw" secondAttribute="width" id="nqa-yY-KDT"/>
+                            <constraint firstItem="YuN-Du-bFa" firstAttribute="width" secondItem="fXQ-Fh-GZw" secondAttribute="width" id="q6W-kg-or3"/>
+                            <constraint firstItem="RTj-ve-OLf" firstAttribute="top" secondItem="S9j-V7-MKD" secondAttribute="bottom" constant="8" id="t43-3N-Qd5"/>
+                            <constraint firstItem="Ayg-bG-F5j" firstAttribute="width" secondItem="fXQ-Fh-GZw" secondAttribute="width" id="t5m-O6-PLS"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="S9j-V7-MKD" secondAttribute="leading" id="tnv-aH-Hmk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fXQ-Fh-GZw" secondAttribute="trailing" id="wlp-XY-e8k"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
