@@ -64,6 +64,10 @@ authReq.bundleId = #该应用的bundleId#;
 
 ```
 
+## doc & sdk
+[share](https://open-doc.dingtalk.com/microapp/native/oguxo2)
+[auth](https://open-doc.dingtalk.com/microapp/native/ddvlch)
+
 ## Author
 littleplayer mailjiancheng@163.com
 
